@@ -13,15 +13,15 @@ price = [23, 40, 67]
 
 def service_price():
     service = input('이용하실 서비스 종류를 입력하세요, a/b/c: ')
-    valueAdded = input('부가세를 포함합니까?, yes/no: ')
-    if valueAdded == 'yes':
+    valueAdded = input('부가세는 별도입니까?, y/n: ')
+    if valueAdded == 'y':
         if service == 'a':
             result = 23 * 1.1
         if service == 'b':
             result = 40 * 1.1
         if service == 'c':
             result = 67 * 1.1
-    if valueAdded == 'no':
+    if valueAdded == 'n':
         if service == 'a':
             result = 23
         if service == 'b':
@@ -29,5 +29,7 @@ def service_price():
         if service == 'c':
             result = 67
     print(round(result, 1), '만 원입니다.')
+
+# IF 문이 너무 많이 쓰여서 개선 필요
 
 service_price()
