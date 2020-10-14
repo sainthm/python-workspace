@@ -9,3 +9,6 @@ print(little_prince[:10])
 
 short = lambda x : x[:10]
 print(short(little_prince))
+
+exchange = lambda won : won * 0.00087 #2020-10-14 환율 기준
+print(exchange(1000000))
