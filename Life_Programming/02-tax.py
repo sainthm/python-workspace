@@ -31,5 +31,6 @@ def service_price():
     print(round(result, 1), '만 원입니다.')
 
 # IF 문이 너무 많이 쓰여서 개선 필요
+# 리스트, 튜플 사용도 필요해보임
 
 service_price()
